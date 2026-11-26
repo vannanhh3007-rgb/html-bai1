@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Cá Nhân - Vân Anh</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #fcf6fa; 
+            color: #4a3b4c;
+            line-height: 1.6;
+            padding: 40px 20px;
+        }
+        .cv-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #ffffff;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(183, 134, 179, 0.12);
+            overflow: hidden;
+            border: 1px solid #f2e3ed;
+        }
+        .header {
+            background: linear-gradient(135deg, #f7d6e0, #e6d4f7); 
+            color: #433047;
+            padding: 45px 30px;
+            text-align: center;
+        }
+        .header h1 {
+            font-size: 30px;
+            margin-bottom: 6px;
+            letter-spacing: 0.5px;
+            font-weight: 700;
+        }
+        .header p {
+            font-size: 15px;
+            font-weight: 500;
+            color: #6b5370;
+        }
+        .content {
+            padding: 35px 40px;
+        }
+        .section {
+            margin-bottom: 28px;
+        }
+        .section h2 {
+            font-size: 17px;
+            color: #8c5c82; 
+            border-bottom: 2px solid #f5e8f1;
+            padding-bottom: 6px;
+            margin-bottom: 14px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 12px;
+            font-size: 14px;
+        }
+        .item {
+            margin-bottom: 12px;
+        }
+        .item-title {
+            font-weight: 700;
+            color: #4a3b4c;
+        }
+        .item-sub {
+            font-size: 135px;
+            color: #8a7b8e;
+            margin-bottom: 4px;
+        }
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            list-style: none;
+        }
+        .skills-list li {
+            background-color: #f7e6f0; 
+            color: #7d4d71;
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: 600;
+        }
+        .footer-nav {
+            text-align: center;
+            padding: 20px;
+            background-color: #fcf9fb;
+            border-top: 1px solid #f2e3ed;
+        }
+        .back-link {
+            text-decoration: none;
+            color: #8c5c82;
+            font-weight: 600;
+            font-size: 14px;
+            transition: opacity 0.2s;
+        }
+        .back-link:hover {
+            opacity: 0.7;
+        }
+        @media (max-width: 600px) {
+            .info-grid { grid-template-columns: 1fr; }
+            .content { padding: 25px 20px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="cv-container">
+        <div class="header">
+            <h1>DƯƠNG NGỌC VÂN ANH</h1>
+            <p>Sinh viên Khoa Công nghệ Thông tin | Trường Đại học Sư Phạm TPHCM</p>
+        </div>
+
+        <div class="content">
+            <div class="section">
+                <h2>Thông tin liên hệ</h2>
+                <div class="info-grid">
+                    <div><strong>Ngày sinh:</strong> 30/07/2008</div>
+                    <div><strong>Điện thoại:</strong> 0825 034 730</div>
+                    <div><strong>Contact:</strong> 5201104005@student.hcmue.edu.vn</div>
+                    <div><strong>Nam/Nữ:</strong> Nữ</div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>Mục tiêu nghề nghiệp</h2>
+                <p>Áp dụng kiến thức nền tảng về lập trình và thiết kế web để xây dựng các giao diện trực quan, thân thiện với người dùng. Không ngừng học hỏi công nghệ mới để phát triển bản thân trong lĩnh vực CNTT.</p>
+            </div>
+
+            <div class="section">
+                <h2>Học vấn</h2>
+                <div class="item">
+                    <div class="item-title">Khoa Công nghệ Thông tin - Sinh viên năm nhất</div>
+                    <div class="item-sub" style="font-size: 13px; color: #8a7b8e; margin-bottom: 6px;">2026 - 2030</div>
+                    <p>Đang theo học chương trình cử nhân Công nghệ Thông tin. Tập trung phát triển nền tảng lập trình với C/C++, tư duy toán học và các môn cơ sở ngành.</p>
+                </div>
+            </div>
+        
+
+            <div class="section">
+                <h2>Kỹ năng</h2>
+                <ul class="skills-list">
+                    <li>Tinh thần tự học</li>
+                    <li>Lập trình C / C++ cơ bản</li>
+                    <li>Git & GitHub Pages</li>
+                    <li>Tư duy thuật toán & Giải quyết vấn đề</li>
+                    <li>Làm việc nhóm</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>Dự án cá nhân</h2>
+                <div class="item">
+                    <div class="item-title">Website Mô phỏng Hồ cá động</div>
+                    <p>Sử dụng HTML và CSS Keyframes để tạo hiệu ứng chuyển động mượt mà cho các đối tượng trên trang web.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-nav">
+            <a href="../index.html" class="back-link">← Quay lại trang chủ</a>
+        </div>
+    </div>
+</body>
+</html>
